@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - ticketx</title>
+    <link rel="stylesheet" href="stylet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@0;1&family=Caesar+Dressing&family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="homet.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-box">
+        <h1>Our Events</h1>
+        <p>Stay updated on all upcoming concerts and events!</p>
+    </div>
+</section>
+
+<section class="event-list">
+    <h1>Upcoming Events</h1>
+
+    <div class="event-item">
+        <h3>Rock Fest 2024</h3>
+        <p><strong>Date:</strong> March 20, 2025</p>
+        <p><strong>Location:</strong> Noida</p>
+        <p><strong>Price:</strong> Rs 10,000</p>
+        <p><strong>Singer:</strong> Illuminati Tour</p>
+        <p><strong>Menu:</strong> Food Stalls with BBQ, Pizza, Soft Drinks, and more</p>
+        <button class="buy-btn">Buy Tickets</button>
+        <button class="learn-more-btn">Learn More</button>
+        <div class="event-details" id="event1-details">
+            <p><strong>About Safety:</strong> We ensure that all our events have a strong security presence, especially for female attendees. There are dedicated security officers on-site, and a safe and comfortable environment is maintained throughout the event.</p>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <h3>Jazz Night</h3>
+        <p><strong>Date:</strong> April 15, 2025</p>
+        <p><strong>Location:</strong> New Delhi</p>
+        <p><strong>Price:</strong> Rs 15,000</p>
+        <p><strong>Singer:</strong> Karan Aujla</p>
+        <p><strong>Menu:</strong> Live Jazz & Wine Pairing, Finger Foods, Exclusive Cocktails</p>
+        <button class="buy-btn">Buy Tickets</button>
+        <button class="learn-more-btn">Learn More</button>
+        <div class="event-details" id="event2-details">
+            <p><strong>About Safety:</strong> There is a safe area for women with private seating sections and dedicated transport services for those who require it. We also have female staff on-site to provide assistance.</p>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <h3>Hip Hop Concert</h3>
+        <p><strong>Date:</strong> May 10, 2025</p>
+        <p><strong>Location:</strong> Chandigarh</p>
+        <p><strong>Price:</strong> Rs 13,500</p>
+        <p><strong>Singer:</strong> Arijit Singh</p>
+        <p><strong>Menu:</strong> Fast Food, Snacks, Energy Drinks</p>
+        <button class="buy-btn">Buy Tickets</button>
+        <button class="learn-more-btn">Learn More</button>
+        <div class="event-details" id="event3-details">
+            <p><strong>About Safety:</strong> We provide secure entrances with ID checks, and there are female-friendly zones where women can attend comfortably. Our staff ensures all attendees have a safe experience.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We bring you closer to the music you love. Experience live performances like never before!</p>
+</section>
+
+<script>
+    document.querySelectorAll('.learn-more-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const eventDetails = this.closest('.event-item').querySelector('.event-details');
+            eventDetails.style.display = (eventDetails.style.display === 'block') ? 'none' : 'block';
+        });
+    });
+</script>
+</body>
+</html>
